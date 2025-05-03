@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite - Premium Car Sales</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">OLUWA<span>TOSIN</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Find Your Dream Car</h1>
+            <p>Browse our extensive collection of premium vehicles at competitive prices. Quality and customer satisfaction guaranteed.</p>
+            <a href="#cars" class="btn">Explore Inventory</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Us</h2>
+            </div>
+            <div class="feature-items">
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Extensive Selection</h3>
+                    <p>Choose from a wide range of vehicles from top manufacturers worldwide.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Pricing</h3>
+                    <p>Our competitive pricing ensures you get the best value for your money.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📝</div>
+                    <h3>Easy Financing</h3>
+                    <p>Flexible financing options tailored to fit your budget and needs.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Quality Assurance</h3>
+                    <p>All our vehicles undergo rigorous inspection and certification.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Expert Support</h3>
+                    <p>Our experienced team is always ready to assist with your questions.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick processing and delivery to get you on the road faster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="cars" id="cars">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Inventory</h2>
+            </div>
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Cars</button>
+                <button class="filter-btn" data-filter="sedan">Sedans</button>
+                <button class="filter-btn" data-filter="suv">SUVs</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+            <div class="car-grid" id="carGrid">
+                <!-- Cars will be populated here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <img src="/api/placeholder/100/100" alt="Customer" class="testimonial-image">
+                    <p class="testimonial-text">"I couldn't be happier with my purchase from AutoElite. The service was exceptional and the car exceeded my expectations. I'll definitely be recommending them to all my friends!"</p>
+                    <p class="testimonial-author">- Michael Johnson</p>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="/api/placeholder/100/100" alt="Customer" class="testimonial-image">
+                    <p class="testimonial-text">"The entire car buying process was seamless from start to finish. The staff was knowledgeable and helped me find the perfect car within my budget. Five stars!"</p>
+                    <p class="testimonial-author">- Sarah Williams</p>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="/api/placeholder/100/100" alt="Customer" class="testimonial-image">
+                    <p class="testimonial-text">"AutoElite offers the best prices in town and their financing options made it possible for me to drive away in my dream car. I'm a customer for life!"</p>
+                    <p class="testimonial-author">- David Thompson</p>
+                </div>
+                <div class="slider-nav">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Interested In...</option>
+                        <option value="buying">Buying a Car</option>
+                        <option value="selling">Selling a Car</option>
+                        <option value="financing">Financing Options</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AutoElite</h3>
+                    <p>Your trusted partner in finding the perfect vehicle to match your lifestyle and budget.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#cars">Inventory</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">New Cars</a></li>
+                        <li><a href="#">Used Cars</a></li>
+                        <li><a href="#">Car Financing</a></li>
+                        <li><a href="#">Trade-In</a></li>
+                        <li><a href="#">Car Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Car Avenue, Autoville</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@autoelite.com</li>
+                        <li>Hours: Mon-Sat 9am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 AutoElite. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
